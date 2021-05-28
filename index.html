@@ -77,9 +77,9 @@
 								<article>
 									<header>
 										<span class="date">April 2021</span>
-										<h2><a href="#">Media Stall Shopping Cart</a></h2>
+										<h2><a href="#" id="myLink">Media Stall Shopping Cart</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/media_stall.jpg" alt="" /></a>
+									<a href="#" class="image fit" id="myLink"><img src="images/media_stall.JPG" alt="" id="myLink"/></a>
 									<p>A shopping cart web application built using ASP.NET</p>
 									<ul class="actions special">
 										<li><button id="myBtn">Read More</button></li>
@@ -98,7 +98,7 @@
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">zhitat93@hotmail.com</a></p>
+								<p><a href="#" >zhitat93@hotmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
@@ -169,6 +169,8 @@
 				
 				// Get the button that opens the modal
 				var btn = document.getElementById("myBtn");
+
+				var link = document.getElementById("myLink");
 				
 				// Get the <span> element that closes the modal
 				var span = document.getElementsByClassName("close")[0];
@@ -178,6 +180,10 @@
 					modal.style.display = "block";  
 				}
 				
+				link.onclick = function() {
+					modal.style.display = "block";
+				}
+
 				// When the user clicks on <span> (x), close the modal
 				span.onclick = function() {
 					  modal.style.display = "none";
