@@ -97,6 +97,30 @@
 										<li><button class="myBtn">Read More</button></li>
 									</ul>
 								</article>
+
+								<article>
+									<header>
+										<span class="date">July 2021</span>
+										<h2><a href="#" class="myLink">CAPS</a></h2>
+									</header>
+									<a href="#" class="image fit" class="myLink"><img src="images/caps_resized.jpg" alt="" class="myLink"/></a>
+									<p>An application system built using Spring Boot and Java</p>
+									<ul class="actions special">
+										<li><button class="myBtn">Read More</button></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<span class="date">July 2021</span>
+										<h2><a href="#" class="myLink">Android Memory Game</a></h2>
+									</header>
+									<a href="#" class="image fit" class="myLink"><img src="images/android_combined_resized.jpg" alt="" class="myLink"/></a>
+									<p>The classic picture memory game on Android</p>
+									<ul class="actions special">
+										<li><button class="myBtn">Read More</button></li>
+									</ul>
+								</article>
 							</section>
 					</div>
 
@@ -195,6 +219,63 @@
 	</div>
 </div>
 
+<!-- caps spring project -->
+<div id="myModal3" class="modal">
+	<div class="modal-content">
+	  <span class="close">&times;</span>
+	  <h2>Course Application Processing System (CAPS)</h2>
+	  <img src="images/caps.JPG"><br>
+	  <p>CAPS is a part of NUS-ISS coursework and was completed as a team. The task was to build a simple
+		   Management Information System using the Spring Boot framework and Java.</p>
+	  <p>A user could login with a username and password, after that the functionality and accessible Information 
+		  of the web application would depend if the user was a Student, Lecturer or Staff member. A Student user would also 
+		  be able to register for courses provided the course was not already full.
+	  </p>
+	  <h4>Technologies Used</h4>
+	  <table style="width:30%">
+		  <tr>
+			  <td>Spring Boot</td>
+		  </tr>
+		  <tr>
+			  <td>Java</td>
+		  </tr>
+		  <tr>
+			<td>Thymeleaf</td>
+		  </tr>
+		  <tr>
+			  <td>HTML / CSS</td>
+		  </tr>
+		  <tr>
+			<td>MySQL</td>
+		</tr>
+	  </table>
+	</div>
+</div>
+
+<!-- android project -->
+<div id="myModal4" class="modal">
+	<div class="modal-content">
+	  <span class="close">&times;</span>
+	  <h2>Android Memory Game</h2>
+	  <img src="images/android_combined.JPG"><br>
+	  <p>This simple and fun game was part of a NUS-ISS coursework project for exploring the various features of Android.</p>
+	  <p>A user has to choose 6 images out of 20 from a category of his or her choice. After that, the game will display
+		   the 6 images flipped and only start upon the first tap. Upon completion, the game success message will be
+		    displayed and the option to compete against another player (on the same phone) will be shown.
+	  </p>
+	  <h4>Technologies Used</h4>
+	  <table style="width:30%">
+		  <tr>
+			  <td>Android</td>
+		  </tr>
+		  <tr>
+			  <td>Java</td>
+		  </tr>
+	  </table>
+	</div>
+</div>
+
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -216,16 +297,24 @@
 				var span = document.getElementsByClassName("close");
 				
 				// When the user clicks the button, open the modal 
-				
- 				btn[0].onclick = function() { 
+				btn[0].onclick = function() { 
 					modal[0].style.display = "block";
 				}
 
 				btn[1].onclick = function() { 
 					modal[1].style.display = "block";
 				}
+
+				btn[2].onclick = function() { 
+					modal[2].style.display = "block";
+				}
+
+				btn[3].onclick = function() { 
+					modal[3].style.display = "block";
+				}
 				
 				// When user clicks the header or picture, open the modal. 2 links for every project
+				// .NET project
 				link[0].onclick = function() {
 					modal[0].style.display = "block";
 				}
@@ -233,13 +322,32 @@
 				link[1].onclick = function() {
 					modal[0].style.display = "block";
 				}
-
+				
+				// React project
 				link[2].onclick = function() {
 					modal[1].style.display = "block";
 				}
 
 				link[3].onclick = function() {
 					modal[1].style.display = "block";
+				}
+				
+				// Spring project
+				link[4].onclick = function() {
+					modal[2].style.display = "block";
+				}
+
+				link[5].onclick = function() {
+					modal[2].style.display = "block";
+				}
+
+				// Android project
+				link[6].onclick = function() {
+					modal[3].style.display = "block";
+				}
+
+				link[7].onclick = function() {
+					modal[3].style.display = "block";
 				}
 
 				// When the user clicks on <span> (x), close the modal
@@ -249,7 +357,15 @@
 
 				span[1].onclick = function() {
 					modal[1].style.display = "none";
-			  }
+			    }
+
+				span[2].onclick = function() {
+					modal[2].style.display = "none";
+			    }
+
+				span[3].onclick = function() {
+					modal[3].style.display = "none";
+			    }
 				
 				// When the user clicks anywhere outside of the modal, close it
 				window.onclick = function(event) {
@@ -258,6 +374,12 @@
 				  }
 				  if (event.target == modal[1]) {
 					modal[1].style.display = "none";
+				  }
+				  if (event.target == modal[2]) {
+					modal[2].style.display = "none";
+				  }
+				  if (event.target == modal[3]) {
+					modal[3].style.display = "none";
 				  }
 				}
 				</script>
