@@ -25,8 +25,8 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="#">About Me</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Projects</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.facebook.com/alvin.lam.52459/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -37,6 +37,8 @@
 
 				<!-- Main -->
 					<div id="main">
+
+						<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button> -->
 
 						<!-- Featured Post -->
 							<article class="post featured">
@@ -73,6 +75,12 @@
 							</article>
 
 						<!-- Posts -->
+						<article class="post featured" id="projects">
+							<h2>Projects</h2>
+							<p>Here is a showcase of the projects that I have worked on in the past. Some of them are
+								 part of NUS-ISS coursework and some are self-initiated. Feel free to check out the
+								  source code on Github.</p>
+						</article>
 							<section class="posts">
 								<article>
 									<header>
@@ -134,10 +142,39 @@
 									</ul>
 								</article>
 							</section>
+
+						<!-- Contact -->
+						<article class="post featured" id="contact">
+							<h2>Contact</h2>
+							<table>
+								<tr>
+									<td>Location</td>
+									<td>Singapore</td>
+								</tr>
+								<tr>
+									<td>Email</td>
+									<td>zhitat93@hotmail.com</td>
+								</tr>
+								<tr>
+									<td>Socials</td>
+									<td>
+										<ul class="icons alt">
+											<li><a href="https://www.facebook.com/alvin.lam.52459/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="https://www.linkedin.com/in/alvinlam1993/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+											<li><a href="https://github.com/alvin158" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+										</ul>
+									</td>
+								</tr>
+							</table>
+						</article>
 					</div>
 
+				
+						
+						
+
 				<!-- Footer -->
-					<footer id="footer">
+					<!-- <footer id="footer">
 						<section class="split contact">
 							<section class="alt">
 								<h3>Location</h3>
@@ -156,7 +193,7 @@
 								</ul>
 							</section>
 						</section>
-					</footer>
+					</footer> -->
 
 				<!-- Copyright -->
 					<div id="copyright">
@@ -321,131 +358,13 @@
 </div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-				// Get the modal
-				var modal = document.getElementsByClassName("modal");
-				
-				// Get the button that opens the modal
-				var btn = document.getElementsByClassName("myBtn");
-
-				var link = document.getElementsByClassName("myLink");
-				
-				// Get the <span> element that closes the modal
-				var span = document.getElementsByClassName("close");
-				
-				// When the user clicks the button, open the modal 
-				btn[0].onclick = function() { 
-					modal[0].style.display = "block";
-				}
-
-				btn[1].onclick = function() { 
-					modal[1].style.display = "block";
-				}
-
-				btn[2].onclick = function() { 
-					modal[2].style.display = "block";
-				}
-
-				btn[3].onclick = function() { 
-					modal[3].style.display = "block";
-				}
-
-				btn[4].onclick = function() { 
-					modal[4].style.display = "block";
-				}
-				
-				// When user clicks the header or picture, open the modal. 2 links for every project
-				// .NET project
-				link[0].onclick = function() {
-					modal[0].style.display = "block";
-				}
-
-				link[1].onclick = function() {
-					modal[0].style.display = "block";
-				}
-				
-				// React project
-				link[2].onclick = function() {
-					modal[1].style.display = "block";
-				}
-
-				link[3].onclick = function() {
-					modal[1].style.display = "block";
-				}
-				
-				// Spring project
-				link[4].onclick = function() {
-					modal[2].style.display = "block";
-				}
-
-				link[5].onclick = function() {
-					modal[2].style.display = "block";
-				}
-
-				// Android project
-				link[6].onclick = function() {
-					modal[3].style.display = "block";
-				}
-
-				link[7].onclick = function() {
-					modal[3].style.display = "block";
-				}
-
-				// Fibonacci project
-				link[8].onclick = function() {
-					modal[4].style.display = "block";
-				}
-
-				link[9].onclick = function() {
-					modal[4].style.display = "block";
-				}
-
-				// When the user clicks on <span> (x), close the modal
-				span[0].onclick = function() {
-					  modal[0].style.display = "none";
-				}
-
-				span[1].onclick = function() {
-					modal[1].style.display = "none";
-			    }
-
-				span[2].onclick = function() {
-					modal[2].style.display = "none";
-			    }
-
-				span[3].onclick = function() {
-					modal[3].style.display = "none";
-			    }
-
-				span[4].onclick = function() {
-					modal[4].style.display = "none";
-			    }
-				
-				// When the user clicks anywhere outside of the modal, close it
-				window.onclick = function(event) {
-				  if (event.target == modal[0]) {
-					modal[0].style.display = "none";
-				  }
-				  if (event.target == modal[1]) {
-					modal[1].style.display = "none";
-				  }
-				  if (event.target == modal[2]) {
-					modal[2].style.display = "none";
-				  }
-				  if (event.target == modal[3]) {
-					modal[3].style.display = "none";
-				  }
-				  if (event.target == modal[4]) {
-					modal[4].style.display = "none";
-				  }
-				}
-				</script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/mycode.js"></script>
 	</body>
 </html>
