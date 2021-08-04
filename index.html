@@ -121,6 +121,18 @@
 										<li><button class="myBtn">Read More</button></li>
 									</ul>
 								</article>
+
+								<article>
+									<header>
+										<span class="date">July 2021</span>
+										<h2><a href="#" class="myLink">Fibonacci Sequence</a></h2>
+									</header>
+									<a href="#" class="image fit" class="myLink"><img src="images/fibonacci_resized.jpg" alt="" class="myLink"/></a>
+									<p>A microservice returning the Fibonacci sequence</p>
+									<ul class="actions special">
+										<li><button class="myBtn">Read More</button></li>
+									</ul>
+								</article>
 							</section>
 					</div>
 
@@ -275,6 +287,38 @@
 	</div>
 </div>
 
+<!-- fibonacci project -->
+<div id="myModal4" class="modal">
+	<div class="modal-content">
+	  <span class="close">&times;</span>
+	  <h2>Fibonacci Sequence</h2>
+	  <img src="images/fibonacci.JPG"><br>
+	  <p>This project was started to explore the idea of using microservices and containerization</p>
+	  <p>A user was to input the URL followed by "/fibonacci?elements=10" where 10 was the number of elements of the
+		   fibonacci sequence that was to be returned. The algorithm would also return another sequence of all the 
+		   even numbers in descending order followed by the odd numbers. The backend was built using Spring Boot 
+		   using a REST API for queries. The entire application was packaged into a Docker image which could be run
+		   on other machines.
+	  </p>
+
+	  <p>Further development of this project will be to utilize a ReactJS frontend user interface for querying.</p>
+	  <h4>Technologies Used</h4>
+	  <table style="width:30%">
+		  <tr>
+			  <td>Spring Boot</td>
+		  </tr>
+		  <tr>
+			  <td>Java</td>
+		  </tr>
+		  <tr>
+			<td>REST</td>
+		</tr>
+		<tr>
+			<td>Docker</td>
+		</tr>
+	  </table>
+	</div>
+</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -311,6 +355,10 @@
 
 				btn[3].onclick = function() { 
 					modal[3].style.display = "block";
+				}
+
+				btn[4].onclick = function() { 
+					modal[4].style.display = "block";
 				}
 				
 				// When user clicks the header or picture, open the modal. 2 links for every project
@@ -350,6 +398,15 @@
 					modal[3].style.display = "block";
 				}
 
+				// Fibonacci project
+				link[8].onclick = function() {
+					modal[4].style.display = "block";
+				}
+
+				link[9].onclick = function() {
+					modal[4].style.display = "block";
+				}
+
 				// When the user clicks on <span> (x), close the modal
 				span[0].onclick = function() {
 					  modal[0].style.display = "none";
@@ -366,6 +423,10 @@
 				span[3].onclick = function() {
 					modal[3].style.display = "none";
 			    }
+
+				span[4].onclick = function() {
+					modal[4].style.display = "none";
+			    }
 				
 				// When the user clicks anywhere outside of the modal, close it
 				window.onclick = function(event) {
@@ -380,6 +441,9 @@
 				  }
 				  if (event.target == modal[3]) {
 					modal[3].style.display = "none";
+				  }
+				  if (event.target == modal[4]) {
+					modal[4].style.display = "none";
 				  }
 				}
 				</script>
